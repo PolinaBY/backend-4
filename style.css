@@ -5,6 +5,7 @@ html,body
 .button{
   font-size: 30px;
 }
+.con
 form{
   display: grid;
   grid-gap: 10px;
@@ -22,4 +23,9 @@ form{
     margin-bottom: 20px;
     padding: 10px;
     text-align: center;
+}
+.container
+{
+  width:80%;
+  max-width:600px;
 }
