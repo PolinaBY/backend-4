@@ -19,3 +19,17 @@ position: absolute;
 .button{
   font-size: 30px;
 }
+.errors
+{
+      background-color: #e2f8d7;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.success
+{
+    background-color: #e2f8d7;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
