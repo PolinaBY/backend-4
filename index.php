@@ -43,7 +43,7 @@
 			<br />
 			<br />
 			<label> Пол: </label>
-                  <?= showError('gender') ?>
+                  <?= showError('sex') ?>
 			<label><input type="radio" checked="checked" name="sex" value="Мужской" <?= getChecked('sex', 'Мужской') ?> required />М</label>
 			<label><input type="radio" name="sex" value="Женский" <?= getChecked('sex', 'Женский') ?> required/>Ж</label>
 						<br />
@@ -68,7 +68,7 @@
 						<br />
 						<br />
 						<label>
-							С контрактом ознакомлен(а) <input type="checkbox" name="agree" value="yes" <?= getChecked('checkbox', 'yes') ?> required />
+							С контрактом ознакомлен(а) <input type="checkbox" name="agree" value="yes" <?= getChecked('agree', 'yes') ?> required />
 							</label>
 						<br />
                         <div class="button">
