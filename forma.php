@@ -109,7 +109,6 @@ $_SESSION['data'] = [
     'legs' => $legs,
     'powers' => $powers,
     'bio' => $bio,
-    'agree' => $agree
 ];
     // Сохранение данных, если нет ошибок
     if (empty($errors)) {
