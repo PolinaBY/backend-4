@@ -121,12 +121,12 @@ $_SESSION['data'] = [
  
             $user_id = $db->lastInsertId();
  
-            $stmt = $db->prepare("SELECT id FROM abilities WHERE ability_name = ?");
+            $stmt = $db->prepare("SELECT id FROM powers WHERE power_name = ?");
             foreach ($powers as $power) {
             $stmt->execute([$power]);
             $power_id = $stmt->fetchColumn();
  
-            $stmt2 = $db->prepare("INSERT INTO user_abilities (user_id, power_id) VALUES (?, ?)");
+            $stmt2 = $db->prepare("INSERT INTO user_powers (user_id, power_id) VALUES (?, ?)");
             $stmt2->execute([$user_id, $power_id]);
             }
             $cookie_expires = time() + 60 * 60 * 24 * 365;
