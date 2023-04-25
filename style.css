@@ -16,10 +16,11 @@ form{
     margin-bottom: 20px;
     text-align: center;
     font-size: 18px;
+  margin-top: 20px;
 }
 .success
 {
-    background-color: #e2f8d7;
+    background-color: #fff;
     margin-bottom: 20px;
     padding: 10px;
     text-align: center;
