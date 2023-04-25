@@ -6,10 +6,6 @@ html,body
 .button{
   font-size: 30px;
 }
-.container{
-   background: #3ecec4;
-}
-  
 .errors
 {
       background-color: #e2f8d7;
