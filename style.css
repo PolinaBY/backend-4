@@ -5,6 +5,10 @@ html,body
 .button{
   font-size: 30px;
 }
+form{
+  display: grid;
+  grid-gap: 10px;
+}
 .errors
 {
       background-color: #fff;
