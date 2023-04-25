@@ -1,12 +1,11 @@
 html,body 
 {
-  background-color: #e2f8d7;
   text-align: center;
 }
 .button{
   font-size: 30px;
 }
-form {
+.forma {
   display:greed;
   greed-10px;
 }
