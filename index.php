@@ -29,23 +29,23 @@
                     <label for="name"> Имя: </label>
                         <br />
                   <?= showError('name') ?>
-                        <input type="text" name="name" id="name" value="<?= getFieldValue('name') ?>" placeholder="Введите имя" required>
+                        <input type="text" name="name" id="name" value="<?= getFieldValue('name') ?>" placeholder="Введите имя">
                     <br />
                     <label for="email"> Почта: </label>
                   <?= showError('email') ?>
 			<br />
-			<input type="email" name="email" id="email" value="<?= getFieldValue('email') ?>" placeholder="Введите вашу почту" required>
+			<input type="email" name="email" id="email" value="<?= getFieldValue('email') ?>" placeholder="Введите вашу почту" >
 			<br />
 			<label for="year"> Дата рождения: </label>
                   <?= showError('year') ?> 
-			<input type="text" name="year" id="year" value="<?= getFieldValue('year') ?>"  required>
+			<input type="text" name="year" id="year" value="<?= getFieldValue('year') ?>" >
 			</select>
 			<br />
 			<br />
 			<label> Пол: </label>
                   <?= showError('sex') ?>
-			<label><input type="radio" checked="checked" name="sex" value="Мужской" <?= getChecked('sex', 'Мужской') ?> required />М</label>
-			<label><input type="radio" name="sex" value="Женский" <?= getChecked('sex', 'Женский') ?> required/>Ж</label>
+			<label><input type="radio" checked="checked" name="sex" value="Мужской" <?= getChecked('sex', 'Мужской') ?> />М</label>
+			<label><input type="radio" name="sex" value="Женский" <?= getChecked('sex', 'Женский') ?> />Ж</label>
 						<br />
 			<label>	Кол-во конечностей: </label>
                   <?= showError('legs') ?>
@@ -55,7 +55,7 @@
 						<label>
                            <label> Сверхспособности: </label>
                             <br />
-							<select name="powers[]" id="powers" multiple="multiple" required>
+							<select name="powers[]" id="powers" multiple="multiple" >
 								<option value="Бессмертие" <?= getSelected('powers', 'Бессмертие') ?>>Бессмертие</option>
 								<option value="Прохождение сквозь стены" <?= getSelected('powers', 'Прохождение сквозь стены') ?>>Прохождение сквозь стены</option>
 								<option value="Левитация" <?= getSelected('powers', 'Левитация') ?>>Левитация</option>
@@ -64,11 +64,11 @@
 						<br />
 						<label for="bio"> Биография: </label>
 							<br />
-							<textarea name="bio" id="bio"  required placeholder="Придумайте свою биографию..."><?= getFieldValue('bio') ?></textarea>
+							<textarea name="bio" id="bio"  placeholder="Придумайте свою биографию..."><?= getFieldValue('bio') ?></textarea>
 						<br />
 						<br />
 						<label>
-							С контрактом ознакомлен(а) <input type="checkbox" name="agree" value="yes" <?= getChecked('agree', 'yes') ?> required />
+							С контрактом ознакомлен(а) <input type="checkbox" name="agree" value="yes" <?= getChecked('agree', 'yes') ?>/>
 							</label>
 						<br />
                         <div class="button">
