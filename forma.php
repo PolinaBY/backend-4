@@ -109,14 +109,15 @@ $_SESSION['data'] = [
     'legs' => $legs,
     'powers' => $powers,
     'bio' => $bio,
+    'agree'=>$agree;
 ];
     // Сохранение данных, если нет ошибок
     if (empty($errors)) {
         unset($_SESSION['errors']);
 
         try {
-            $stmt = $db->prepare("INSERT INTO users (name, email, year, sex, legs, bio) VALUES (?, ?, ?, ?, ?, ?)");
-            $stmt->execute([$name, $email, $year, $sex, $legs, $bio]);
+            $stmt = $db->prepare("INSERT INTO users (name, email, year, sex, legs, bio, agree) VALUES (?, ?, ?, ?, ?, ?, ?)");
+            $stmt->execute([$name, $email, $year, $sex, $legs, $bio, $agree]);
  
             $user_id = $db->lastInsertId();
  
@@ -136,6 +137,7 @@ $_SESSION['data'] = [
             setcookie('legs', $legs, $cookie_expires);
             setcookie('powers', implode(',', $powers), $cookie_expires);
             setcookie('bio', $bio, $cookie_expires);
+            setcookie('agree', $agree, $cookie_expires);
             unset($_SESSION['data']);
 
             header("Location: index.php");
