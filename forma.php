@@ -137,7 +137,6 @@ $_SESSION['data'] = [
             setcookie('legs', $legs, $cookie_expires);
             setcookie('powers', implode(',', $powers), $cookie_expires);
             setcookie('bio', $bio, $cookie_expires);
-            setcookie('agree', $agree, $cookie_expires);
             unset($_SESSION['data']);
 
             header("Location: index.php");
