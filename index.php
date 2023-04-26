@@ -50,9 +50,23 @@
 			<label>	Кол-во конечностей: </label>
                   <?= showError('legs') ?>
 						<br />
-						<input type="text" name="legs" id="legs" value="<?= getFieldValue('legs') ?>">
-						<br />
 						<label>
+							<input type="radio" checked="checked" name="legs" value="1" <?= getChecked('legs', '1') ?>  />1
+						</label>
+						<label>
+							<input type="radio" name="legs" value="2" <?= getChecked('legs', '2') ?> />2
+						</label>
+						<label>
+							<input type="radio" name="legs" value="3" <?= getChecked('legs', '3') ?> />3
+						</label>
+						<label>
+							<input type="radio" name="legs" value="4" <?= getChecked('legs', '4') ?> />4
+						</label>
+						<label>
+							<input type="radio" name="legs" value="5" <?= getChecked('legs', '5') ?> />5
+						</label>
+						<br />
+					
                            <label> Сверхспособности: </label>
                             <br />
 							<select name="powers[]" id="powers" multiple="multiple" >
