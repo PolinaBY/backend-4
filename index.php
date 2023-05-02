@@ -39,7 +39,8 @@
 			<label for="year"> Год рождения: </label>
                   <?= showError('year') ?> 
 			<br />
-			<input type="text" name="year" id="year" value="<?= getFieldValue('year') ?>" placeholder="Введите год рожденя">
+			<select name="year" id="year" >
+				<option value="<?= getSelected('year', "") ?>">Выберите год</option>
 			<br />
 			<label> Пол: </label>
                   <?= showError('sex') ?>
