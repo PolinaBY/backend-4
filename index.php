@@ -89,6 +89,21 @@
                             <input type="submit" value="Отправить" />
                         </div>
                     </form>
+				<script>
+              const select = document.getElementById('year');
+              const currentYear = new Date().getFullYear();
+              for (let i = currentYear; i >= currentYear - 100; i--) {
+                  const option = document.createElement('option');
+                  option.value = i;
+                  option.text = i;
+                  if(i == <?= isset($_COOKIE['year']) ? $_COOKIE['year'] : '""' ?>) 
+                     {
+                     option.selected = true;
+                     }
+                  select.add(option);
+}
+
+    </script>
                 </div>
             </div>
         </body>
