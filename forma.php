@@ -16,6 +16,14 @@ function getSelected($fieldName, $value)
     }
     return '';
 }
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Получаем выбранные значения и записываем их в куки-файл
+  if (isset($_POST["powers"])) {
+    $selectedA = implode(',', $_POST["powers"]);
+    setcookie('powers', $selectedA, time() + 3600, '/');
+  }
+}
+
 
 function getChecked($fieldName, $value)
 {
