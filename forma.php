@@ -33,6 +33,11 @@ function getChecked($fieldName, $value)
     return '';
 }
 
+  if (isset($_POST["sex"])) {
+    $value = $_POST["sex"];
+    setcookie('sex', $value, time() + 3600, '/');
+  }
+
 function getFieldValue($fieldName)
 {
     if (isset($_SESSION['errors']) && !empty($_SESSION['errors']) && isset($_SESSION['data'][$fieldName])) {
