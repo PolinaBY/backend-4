@@ -23,7 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     setcookie('powers', $selectedA, time() + 3600, '/');
   }
 }
-
+if(isset($_POST['year'])) {
+  $selectedYear = $_POST['year'];
+  setcookie('year', $selectedYear, time() + (86400 * 30), "/");
+}
 
 function getChecked($fieldName, $value)
 {
