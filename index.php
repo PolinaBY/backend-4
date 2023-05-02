@@ -41,6 +41,7 @@
 			<br />
 			<select name="year" id="year" >
 				<option value="<?= getSelected('year', "") ?>">Выберите год</option>
+			</select>
 			<br />
 			<label> Пол: </label>
                   <?= showError('sex') ?>
