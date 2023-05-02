@@ -38,8 +38,8 @@
 			<br />
 			<label for="year"> Год рождения: </label>
                   <?= showError('year') ?> 
-			<input type="text" name="year" id="year" value="<?= getFieldValue('year') ?>" placeholder="Введите год рожденя">
 			<br />
+			<input type="text" name="year" id="year" value="<?= getFieldValue('year') ?>" placeholder="Введите год рожденя">
 			<br />
 			<label> Пол: </label>
                   <?= showError('sex') ?>
