@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     input[name="name"]{
     border:1px solid red;
     }
-    </style>'
+    </style>';
 }
 
 if (empty($email)) {
