@@ -36,9 +36,10 @@
 			<br />
 			<input type="email" name="email" id="email" value="<?= getFieldValue('email') ?>" placeholder="Введите вашу почту" >
 			<br />
-			<label for="year"> Дата рождения: </label>
+			<label for="year"> Год рождения: </label>
                   <?= showError('year') ?> 
-			<input type="text" name="year" id="year" value="<?= getFieldValue('year') ?>" >
+			<select name="year" id="year">
+			<option value="<?= getSelected('year', "") ?>">Выберите год</option>
 			</select>
 			<br />
 			<br />
