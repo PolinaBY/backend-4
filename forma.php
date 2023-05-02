@@ -86,11 +86,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Валидация полей (проверка на пустоту и корректность)
     if (empty($name)) {
     $errors[] = "Пожалуйста заполните поле Имя";
-<style>
-    input[name="name"]{
+'<style>
+    input[id="name"]{
     border:10px solid red;
     }
-    </style>;
+    </style>';
 }
 
 if (empty($email)) {
