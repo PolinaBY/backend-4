@@ -76,7 +76,7 @@ if (empty($email)) {
 }
 
 if (empty($year)) {
-    $errors[] = "Пожалуйста заполните поле Дата рождения";
+    $errors[] = "Пожалуйста заполните поле Год рождения";
 }
 
 if (!empty($name) && !preg_match("/^[a-zA-Zа-яА-ЯёЁ\s]+$/u", $name)) {
