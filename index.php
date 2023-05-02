@@ -88,17 +88,6 @@
                             <input type="submit" value="Отправить" />
                         </div>
                     </form>
-			<script>
-        // Заполнение списка годов
-        const select = document.getElementById('year');
-        const currentYear = new Date().getFullYear();
-        for (let i = currentYear; i >= currentYear - 100; i--) {
-            const option = document.createElement('option');
-            option.value = i;
-            option.text = i;
-            select.add(option);
-        }
-    </script>
                 </div>
             </div>
         </body>
