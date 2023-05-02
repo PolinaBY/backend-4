@@ -8,14 +8,6 @@ function showError($field)
     }
     return '';
 }
-if($error){
-    echo '<style>
-    input[name='name']{
-    border:1px solid red;
-    }
-    </style>'
-    }
-?>
 
 function getSelected($fieldName, $value)
 {
