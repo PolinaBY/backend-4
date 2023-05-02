@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($name)) {
     $errors[] = "Пожалуйста заполните поле Имя";
 '<style>
-    input[name='name']{
+    input[name="name"]{
     border:1px solid red;
     }
     </style>'
