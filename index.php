@@ -44,6 +44,7 @@
 			</select>
 			<br />
 			<label> Пол: </label>
+			<br />
                   <?= showError('sex') ?>
 			<label><input type="radio" checked="checked" name="sex" value="Мужской" <?= getChecked('sex', 'Мужской') ?> />М</label>
 			<label><input type="radio" name="sex" value="Женский" <?= getChecked('sex', 'Женский') ?> />Ж</label>
