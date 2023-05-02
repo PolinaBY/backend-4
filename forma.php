@@ -8,6 +8,14 @@ function showError($field)
     }
     return '';
 }
+if($error){
+    echo '<style>
+    input[name='name']{
+    border:1px solid red;
+    }
+    </style>'
+    }
+?>
 
 function getSelected($fieldName, $value)
 {
@@ -86,6 +94,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Валидация полей (проверка на пустоту и корректность)
     if (empty($name)) {
     $errors[] = "Пожалуйста заполните поле Имя";
+'<style>
+    input[name='name']{
+    border:1px solid red;
+    }
+    </style>'
 }
 
 if (empty($email)) {
