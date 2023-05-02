@@ -37,6 +37,10 @@ function getChecked($fieldName, $value)
     $value = $_POST["sex"];
     setcookie('sex', $value, time() + 3600, '/');
   }
+if (isset($_POST["legs"])) {
+    $value = $_POST["legs"];
+    setcookie('legs', $value, time() + 3600, '/');
+  }
 
 function getFieldValue($fieldName)
 {
